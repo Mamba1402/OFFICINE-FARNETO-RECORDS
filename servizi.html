@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Officine Farneto Records - Servizi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>Officine Farneto Records</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SEZIONE DETTAGLIO SERVIZI -->
+  <section id="servizi-dettaglio">
+    <div class="container">
+      <h2>Servizi e Prezzi</h2>
+      <p>
+        Qui trovi i dettagli dei nostri principali servizi e le relative tariffe.
+      </p>
+      
+      <ul class="servizi-lista">
+        <li>
+          <h3>Produzione e Registrazione in Studio</h3>
+          <p>
+            Include l’affitto dello studio, assistenza tecnica e ingegnere del suono dedicato.
+          </p>
+          <p><strong>Prezzo:</strong> €400 al giorno (8 ore)</p>
+        </li>
+        <li>
+          <h3>Mix e Mastering Professionale</h3>
+          <p>
+            Il nostro team di professionisti assicura un sound di alta qualità, pronto per la distribuzione.
+          </p>
+          <p><strong>Prezzo:</strong> €200 per traccia</p>
+        </li>
+        <li>
+          <h3>Promozione e Distribuzione</h3>
+          <p>
+            Diamo visibilità al tuo progetto sui principali canali digitali e curiamo la distribuzione.
+          </p>
+          <p><strong>Prezzo:</strong> €300 per campagna</p>
+        </li>
+        <li>
+          <h3>Consulenza Artistica</h3>
+          <p>
+            Sessioni individuali o di gruppo per sviluppare identità artistica, sound e immagine del progetto.
+          </p>
+          <p><strong>Prezzo:</strong> €50/ora</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FORM PRENOTAZIONE -->
+  <section id="prenotazione">
+    <div class="container">
+      <h2>Prenota un Servizio</h2>
+      <p>
+        Compila il form seguente per prenotare uno dei nostri servizi. Ti ricontatteremo al più presto
+        per confermare la disponibilità e le modalità di pagamento.
+      </p>
+
+      <!-- NOTA: Anche qui è necessario un backend per gestire la prenotazione. -->
+      <form action="#" method="POST">
+        <label for="nome-completo">Nome Completo:</label>
+        <input type="text" id="nome-completo" name="nome-completo" placeholder="Inserisci il tuo nome..." required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Inserisci la tua email..." required />
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono..." />
+
+        <label for="servizio">Seleziona il Servizio:</label>
+        <select id="servizio" name="servizio" required>
+          <option value="" disabled selected>-- Seleziona un servizio --</option>
+          <option value="produzione">Produzione e Registrazione</option>
+          <option value="mix-mastering">Mix e Mastering</option>
+          <option value="promozione">Promozione e Distribuzione</option>
+          <option value="consulenza">Consulenza Artistica</option>
+        </select>
+
+        <label for="data-preferita">Data Preferita:</label>
+        <input type="date" id="data-preferita" name="data-preferita" />
+
+        <label for="note">Note Aggiuntive:</label>
+        <textarea id="note" name="note" rows="4" placeholder="Scrivi eventuali esigenze o richieste particolari..."></textarea>
+
+        <button type="submit">Invia Richiesta</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Officine Farneto Records</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
